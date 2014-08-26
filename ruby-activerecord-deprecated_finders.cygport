@@ -1,0 +1,17 @@
+inherit rubygem
+
+NAME="ruby-activerecord-deprecated_finders"
+VERSION=1.0.3
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby Active Record finder APIs"
+DESCRIPTION="A toolkit for building modeling frameworks like Active Record and
+Active Resource. Rich support for attributes, callbacks, validations, observers,
+serialization, internationalization, and testing."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_activerecord_deprecated_finders_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_activerecord_deprecated_finders_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+
